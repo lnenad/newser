@@ -2,6 +2,8 @@
 
 A simple utility to crawl some news sites or other resources and download content into a pdf
 
+![Screenshot](screenshot.png "Screenshot of a pdf on windows")
+
 ## Building
 
 Make sure you have `config.yaml` setup and `go` available, then run `go build cmd/newser.go` or just run it from source with `go run cmd/newser.go`
