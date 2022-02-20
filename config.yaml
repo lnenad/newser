@@ -1,0 +1,46 @@
+font:
+  title: 15
+  content: 12
+
+output:
+  extension: ".pdf"
+  directory: "D:/Dropbox/Supernote/Document/News"
+
+defs:
+  website:
+    - index: "https://www.theverge.com"
+      indexSelector: ".c-entry-box--compact"
+      titleSelector: "div > h2 > a"
+      linkSelector: "a"
+      linkAttr: "href"
+      articleContainerSelector: ".l-col__main"
+      articleContentSelector: ".c-entry-content"
+      ignoreString: "Verge Deals"
+      collectOnly: 3
+      disable: 0
+    - index: "https://www.arstechnica.com"
+      indexSelector: ".article"
+      titleSelector: "header > h2 > a"
+      linkSelector: "header > h2 > a"
+      linkAttr: "href"
+      articleContainerSelector: ".column-wrapper"
+      articleContentSelector: ".article-content"
+      ignoreString: ""
+      removeElems:
+        - "aside"
+        - "figure"
+      collectOnly: 3
+      disable: 0
+    - index: "https://www.engadget.com"
+      indexSelector: "#module-dynamic-lede a"
+      titleSelector: "h1"
+      linkSelector: ""
+      linkAttr: "href"
+      linkPrefix: "https://www.engadget.com"
+      articleContainerSelector: "#module-article-container"
+      articleContentSelector: ".article-text"
+      ignoreString: ""
+      removeElems:
+        - "figure"
+      collectOnly: 3
+      disable: 0
